@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uber_clone/core/widgets/custom_form_field.dart';
 
 class PhoneFormField extends StatelessWidget {
   const PhoneFormField({super.key});
@@ -7,27 +8,10 @@ class PhoneFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     var phoneController = TextEditingController();
 
-    return TextFormField(
-      keyboardType: TextInputType.phone,
-      style: TextStyle(
-        letterSpacing: 2,
-
-      ),
+    return CustomFormField(
       controller: phoneController,
-      onChanged: (value) {},
-      onFieldSubmitted: (value){},
-      validator: (value){
-        if(value!.isEmpty){
-          return 'phone number is wrong';
-        }
-      },
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
-        hintText: '01234567890',
-
-      ),
+      keyboardType: TextInputType.phone,
+      hintText: '01234567000',
     );
   }
 }

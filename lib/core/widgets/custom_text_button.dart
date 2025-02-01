@@ -12,7 +12,6 @@ class CustomTextButton extends StatelessWidget {
     this.fontSize,
     this.fontWeight,
     this.textColor,
-    this.image,
   });
 
   final double height;
@@ -24,7 +23,6 @@ class CustomTextButton extends StatelessWidget {
   final Color color;
   final Color? textColor;
   final void Function() onPressed;
-  final Image? image;
 
   @override
   Widget build(BuildContext context) {

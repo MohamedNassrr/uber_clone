@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uber_clone/core/utils/assets_data.dart';
 
 class GoogleAndEmailFormField extends StatelessWidget {
   const GoogleAndEmailFormField({super.key});
@@ -8,7 +9,7 @@ class GoogleAndEmailFormField extends StatelessWidget {
     return Column(
       spacing: 10,
       children: [
-        InkWell(
+        GestureDetector(
           onTap: (){},
           child: Row(
             children: [
@@ -29,7 +30,7 @@ class GoogleAndEmailFormField extends StatelessWidget {
                         width: 25,
                         child: Image(
                           image: AssetImage(
-                            'assets/images/google_icon.png',
+                            AssetsData.googleIcon
                           ),
                         ),
                       ),
@@ -47,7 +48,7 @@ class GoogleAndEmailFormField extends StatelessWidget {
             ],
           ),
         ),
-        InkWell(
+        GestureDetector(
           onTap: (){},
           child: Row(
             children: [
@@ -84,6 +85,46 @@ class GoogleAndEmailFormField extends StatelessWidget {
             ],
           ),
         ),
+        GestureDetector(
+          onTap: (){},
+          child: Row(
+            children: [
+              Expanded(
+                child: Container(
+                  width: double.infinity,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.grey.shade300,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    spacing: 4,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 25,
+                        width: 25,
+                        child: Image(
+                          image: AssetImage(
+                            AssetsData.facebookIcon,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Continue with Facebook',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+
       ],
     );
   }
