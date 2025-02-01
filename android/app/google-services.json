@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "45238927405",
+    "project_id": "uberrr-clonee",
+    "storage_bucket": "uberrr-clonee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45238927405:android:92634ea63c442578d478a4",
+        "android_client_info": {
+          "package_name": "com.example.uber_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSYcml_E8FvNYpU7kfrRS9BuQT63j8_Sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
